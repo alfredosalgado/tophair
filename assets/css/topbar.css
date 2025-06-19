@@ -1,0 +1,98 @@
+/* ===== TOP BAR STYLES ===== */
+
+/* Contenedor principal de la Top Bar */
+.topbar {
+    background-color: #2c2c2c;
+    color: #ffffff;
+    padding: 8px 0;
+    font-size: 14px;
+    border-bottom: 1px solid #444;
+    position: relative;
+    z-index: 1000;
+    margin: 0;
+    top: 0;
+}
+
+/* Contenedor interno con ancho máximo */
+.topbar-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Contenedor de información de contacto */
+.topbar-contact {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+/* Estilos para teléfono y email */
+.topbar-phone,
+.topbar-email {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Enlaces de contacto */
+.topbar-phone a,
+.topbar-email a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-weight: 500;
+}
+
+/* Hover effect para enlaces */
+.topbar-phone a:hover,
+.topbar-email a:hover {
+    color: #ff6b35;
+    text-decoration: underline;
+}
+
+/* Iconos (usando caracteres Unicode como fallback) */
+.icon-phone::before {
+    content: "📞";
+    font-size: 12px;
+    margin-right: 2px;
+}
+
+.icon-email::before {
+    content: "✉️";
+    font-size: 12px;
+    margin-right: 2px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .topbar {
+        padding: 6px 0;
+        font-size: 12px;
+    }
+    
+    .topbar-container {
+        padding: 0 15px;
+        justify-content: center;
+    }
+    
+    .topbar-contact {
+        gap: 20px;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .topbar-contact {
+        gap: 10px;
+    }
+    
+    .topbar-phone,
+    .topbar-email {
+        font-size: 11px;
+    }
+}

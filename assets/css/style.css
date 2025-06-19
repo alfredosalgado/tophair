@@ -1,0 +1,101 @@
+/* Importar archivos CSS específicos */
+@import url('./topbar.css');
+@import url('./navbar.css');
+@import url('./header.css');
+@import url('./services.css');
+@import url('./brands.css');
+@import url('./about.css');
+@import url('./footer.css');
+
+/* ===== RESET Y ESTILOS GLOBALES ===== */
+
+/* Reset básico para eliminar márgenes y padding por defecto */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos para html y body */
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #ffffff;
+}
+
+/* Eliminar márgenes por defecto de elementos comunes */
+h1, h2, h3, h4, h5, h6, p, ul, ol, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos básicos para enlaces */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos básicos para listas */
+ul, ol {
+    list-style: none;
+}
+
+/* Estilos básicos para imágenes */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Utilidades de texto */
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+/* Utilidades de display */
+.d-none {
+    display: none;
+}
+
+.d-block {
+    display: block;
+}
+
+.d-flex {
+    display: flex;
+}
+
+/* Responsive utilities */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 10px;
+    }
+}
